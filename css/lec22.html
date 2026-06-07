@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root{
+            --primary-color: dark blue;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: solid 2px black;
+            display: flex;
+       justify-content: center;
+       align-items: center;
+        }
+        .box{
+            /* //variable  */ --primary-color:  blue;
+            background-color: lightgreen;
+            width: 330px;
+            height: 330px;
+            border: solid 1px var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: -10px 15px black; */
+           /* box-shadow:10px 15px 10px black ; */
+               /* box-shadow:10px 15px 5px 20px black ; */
+               /* box-shadow: inset 10px 15px 5px 20px black ; */
+               /* box-shadow:10px 15px  red ,15px 20px black ; */
+           
+        }
+        #head1{
+            text-shadow: 2px 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img src="premium_photo-1667119168145-a98fb5d9a275.avif" width="200px" height="200px" alt="Premium Image">
+        <h2 id="head1">
+            Welcome the world of web design
+        </h2 >
+        <p>
+            Lorem ipsum dolor sit amet co Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, 
+        </p>
+        </div>
+    </div>
+</body>
+</html>
