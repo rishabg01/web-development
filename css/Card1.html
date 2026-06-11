@@ -81,24 +81,24 @@
             font-weight: bold;
         }
     .imgbox {
-    width: 2.5rem;         /* Keep your fixed width */
-    height: 2.5rem;        /* Keep your fixed height */
-    border-radius: 50%;    /* Makes it a perfect circle */
-    overflow: hidden;      /* Hides anything outside the circle */
+    width: 2.5rem;         
+    height: 2.5rem;        
+    border-radius: 50%;    
+    overflow: hidden;      
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white; /* Optional: Gives the transparent icon a solid backing */
+    background-color: white; 
     
-    /* THE MAGIC FIX: */
-    flex-shrink: 0;        /* Tells Flexbox: DO NOT squish this circle! */
+    
+    flex-shrink: 0;        
 }
 
 .imgbox img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    border-radius: 50%;  /* 'contain' prevents the music icon from being chopped off */
+    border-radius: 50%; 
 }
 .rightbox a{
     text-decoration: none;
