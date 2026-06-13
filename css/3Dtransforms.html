@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D tranforms</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+         padding: 5rem;
+         display: grid;
+         gap: 1rem;
+         grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            padding: 2rem;
+            height: 250px;
+            width: 250px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+
+        }
+        #a:hover{
+            transform: rotateX(45deg);
+            
+        }
+        #f:hover{
+            transform: perspective(300px) translateZ(200px);
+
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="item" id="a">RotateX</div>
+        <div class="item" id="b">RotateY</div>
+        <div class="item" id="c">RotateZ</div>
+        <div class="item" id="d">TranslateX</div>
+        <div class="item" id="e">TranslateY</div>
+        <div class="item" id="f">TranslateZ</div>
+        <div class="item" id="g">ScaleX</div>
+        <div class="item" id="h">ScaleY</div>
+        <div class="item" id="i">ScaleZ</div>
+       
+    </div>
+</body>
+</html>
